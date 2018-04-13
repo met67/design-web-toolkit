@@ -145,7 +145,6 @@
 .Megamenu--default .Megamenu-subnavGroup > li > a {
   @extend .u-color-95;
   @extend .u-text-r-s;
-  @extend .u-textUppercase;
   @extend .u-textWeight-700;
 }
 
