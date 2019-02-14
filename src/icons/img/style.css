@@ -14,3 +14,71 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.Icon-images {
+  width: 1.125em;
+}
+
+.Icon-connection {
+  width: 1.25em;
+}
+
+.Icon-books {
+  width: 1.125em;
+}
+
+.Icon-library {
+  width: 1.0625em;
+}
+
+.Icon-price-tags {
+  width: 1.25em;
+}
+
+.Icon-history {
+  width: 1.0625em;
+}
+
+.Icon-keyboard {
+  width: 1.125em;
+}
+
+.Icon-bubbles {
+  width: 1.125em;
+}
+
+.Icon-bubbles2 {
+  width: 1.125em;
+}
+
+.Icon-bubbles3 {
+  width: 1.125em;
+}
+
+.Icon-bubbles4 {
+  width: 1.125em;
+}
+
+.Icon-users {
+  width: 1.125em;
+}
+
+.Icon-menu2 {
+  width: 1.375em;
+}
+
+.Icon-menu3 {
+  width: 1.375em;
+}
+
+.Icon-menu4 {
+  width: 1.375em;
+}
+
+.Icon-volume-high {
+  width: 1.0625em;
+}
+
+.Icon-embed2 {
+  width: 1.25em;
+}
