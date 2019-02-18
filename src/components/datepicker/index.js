@@ -40,10 +40,22 @@ if (dateInputs.length > 0) {
           ],
           weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab']
         }
-        // onSelect: () => {
-        //   console.log(this.getMoment().format('Do MMMM YYYY'))
-        // }
+        //onSelect: () => {
+           //console.log(this.getMoment().format('Do MMMM YYYY'))		   
+        //}
       })
+	  $(el).closest('form').submit(function( event ) {        
+        event.preventDefault()
+		const oldval = $(el).val()		
+		const parts = oldval.split('/')
+        const day = parseInt(parts[0], 10)
+        const month = parseInt(parts[1], 10)
+        const year = parseInt(parts[2], 10)
+		const ISODate = [year, month < 10 ? '0' + month : month, day < 10 ? '0' + day : day].join('-')
+		$(el).val(ISODate)		
+		this.submit()
+		$(el).val(oldval)
+	  })		  	  
     })
   })
 }
