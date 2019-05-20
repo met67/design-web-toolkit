@@ -1,0 +1,50 @@
+font/style.css:
+    sostituire : con ::
+        da
+            :before
+        a
+            ::before
+    aggiungere una riga vuota dopo ogni classe:
+        da
+            }
+            .Icon-xxxx
+        a
+            }
+
+            .Icon-xxxx
+
+    aggiungere classe Icon alla prima classe:
+        da
+            [class^="Icon-"], [class*=" Icon-"]
+        a
+            .Icon,
+            [class^="Icon-"],
+            [class*=" Icon-"]
+    cambiare gli apici singoli in apici doppi
+        da ' a ''
+    altro da stylelint fino ad arrivare a questo:
+        @font-face {
+        font-family: "ita";
+        font-style: normal;
+        font-weight: normal;
+        src: url("fonts/ita.eot?q69j0z");
+        src:
+            url("fonts/ita.eot?q69j0z#iefix") format("embedded-opentype"),
+            url("fonts/ita.ttf?q69j0z") format("truetype"),
+            url("fonts/ita.woff?q69j0z") format("woff"),
+            url("fonts/ita.svg?q69j0z#ita") format("svg");
+        }
+
+        .Icon,
+        [class^="Icon-"],
+        [class*=" Icon-"] {
+        font-family: "ita" !important;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 1;
+        speak: none;
+        text-transform: none;
+        }
